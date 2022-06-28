@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>Pugs</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">  
+	</head>
+	<body>
+		<!--Sprite svg facebook
+			========================-->
+		<svg style="display: none">	
+			<symbol id="facebook" viewBox="-100 -100 600 600">
+				<g transform="matrix(0.23 0 0 0.23 200 200)">
+					<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill-rule: nonzero; opacity: 1;"transform=" translate(-911, -832)" d="M 1343 12 v 264 h -157 q -86 0 -116 36 t -30 108 v 189 h 293 l -39 296 h -254 v 759 h -306 v -759 h -255 v -296 h 255 v -218 q 0 -186 104 -288.5 t 277 -102.5 q 147 0 228 12 z" stroke-linecap="round" />
+				</g>
+			</symbol>
+		</svg>
+
+		<!--Sprite svg instagram
+			========================-->	
+		<svg style="display: none">	
+			<symbol id="instagram" viewBox="0 0 400 400">
+				<g transform="matrix(8.33 0 0 8.33 200 200)" id="Layer_1"  >
+					<path style="stroke-dasharray: none; stroke-linecap: butt; stroke-width:2;stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -12)" d="M 18.682 22.5 H 5.318 c -2.109 0 -3.818 -1.709 -3.818 -3.818 V 5.318 C 1.5 3.209 3.209 1.5 5.318 1.5 h 13.364 c 2.109 0 3.818 1.709 3.818 3.818 v 13.364 C 22.5 20.791 20.791 22.5 18.682 22.5 z" stroke-linecap="round" />
+				</g>
+				<g transform="matrix(8.33 0 0 8.33 200 200)" id="Layer_1"  >
+					<circle style=" stroke-width: 1.9091; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"  cx="0" cy="0" r="4.773" />
+				</g>
+				<g transform="matrix(8.33 0 0 8.33 251.71 148.29)" id="Layer_1"  >
+					<circle style="stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(198,202,204); fill-rule: nonzero; opacity: 1;"  cx="0" cy="0" r="1.432" />
+				</g>
+			</symbol>
+		</svg>
+
+		<!--Sprite svg whatsapp
+			========================-->	
+		<svg style="display: none">	
+			<symbol id="whatsapp" viewBox="-10 -10 420 420">
+				<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M200.3,115.4c-46.3,0-83.8,37.5-83.8,83.8
+				c0,18.1,5.7,34.8,15.5,48.5l-8,29.1l29.9-7.8c13.3,8.9,29.2,14,46.4,14c46.3,0,83.8-37.5,83.8-83.8S246.6,115.4,200.3,115.4z"/>
+				<g id="WhatsApp-Logo" transform="matrix(0.39 0 0 0.39 200 200)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M117.3,51.1c-6.4-3.2-37.7-18.6-43.5-20.7c-5.8-2.1-10.1-3.2-14.3,3.2
+				c-4.2,6.4-16.5,20.7-20.2,25c-3.7,4.3-7.4,4.8-13.8,1.6c-6.4-3.2-26.9-9.9-51.2-31.6C-44.7,11.6-57.5-9.3-61.2-15.6
+				c-3.7-6.4-0.4-9.8,2.8-13c2.9-2.9,6.4-7.4,9.6-11.2c3.2-3.7,4.2-6.4,6.4-10.6c2.1-4.3,1.1-8-0.5-11.2c-1.6-3.2-14.3-34.5-19.6-47.3
+				c-5.2-12.4-10.4-10.7-14.3-10.9c-3.7-0.2-8-0.2-12.2-0.2c-4.2,0-11.1,1.6-17,8c-5.8,6.4-22.3,21.8-22.3,53.1
+				c0,31.4,22.8,61.6,26,65.9c3.2,4.3,44.9,68.6,108.8,96.2c15.2,6.6,27.1,10.5,36.3,13.4c15.3,4.8,29.1,4.2,40.1,2.5
+				c12.2-1.8,37.7-15.4,43-30.3c5.3-14.9,5.3-27.6,3.7-30.3C127.9,55.8,123.7,54.3,117.3,51.1 M1.1,209.8L1.1,209.8
+				c-38.1,0-75.4-10.2-107.9-29.5l-7.7-4.6l-80.2,21l21.4-78.2l-5-8c-21.2-33.7-32.4-72.7-32.4-112.8c0-116.8,95.1-211.9,212-211.9
+				c56.6,0,109.8,22.1,149.8,62.1c40,40,62,93.3,62,149.9C212.9,114.7,117.9,209.8,1.1,209.8 M181.4-182.5
+				c-48.1-48.2-112.1-74.7-180.3-74.8c-140.5,0-254.9,114.4-254.9,254.9c0,44.9,11.7,88.8,34,127.4L-256,257.2l135.1-35.5
+				c37.2,20.3,79.2,31,121.8,31h0.1c140.5,0,254.9-114.4,254.9-254.9C256-70.2,229.5-134.3,181.4-182.5"/>
+				</g>
+				<g transform="matrix(8.33 0 0 8.33 200 200)" id="WhatsApp-Logo">
+					<path style="stroke: rgb(198,202,204);  stroke-dasharray: none; stroke-linecap: butt; stroke-width:2;stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(198,202,204); fill-rule: nonzero; opacity: 1;">
+				</g>
+			</symbol>
+		</svg>
+
+		<header class="header header-js" id="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<img src="img/wpuglife.png" alt="">
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a data-goto=".features" class="menu__link" href="#">Our benefits</a></li>
+								<li><a data-goto=".photos" class="menu__link" href="#">The club's pets</a></li>
+								<li><a data-goto=".team" class="menu__link" href="#">Our team</a></li>
+								<li><a data-goto=".reviews" class="menu__link" href="#">Happy pug owners</a></li>
+								<li><a data-goto=".footer" class="menu__link" href="#">Our Contacts</a></li>
+								<li>
+									<a class="menu__link" href="pageout.html">Life with a Pug</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li><a href="pageout.html" class="menu__sub-link">Pug Adoption</a></li>
+										<li><a href="pageout.html" class="menu__sub-link">Health & Care</a></li>
+										<li><a href="pageout.html" class="menu__sub-link">Behavoir & Training</a></li>
+										<li><a href="pageout.html" class="menu__sub-link">Pug Mixes</a></li>
+									</ul>
+								</li>				
+							</ul>
+
+						</nav>
+						<button class="menu__burger" type="button"><span class="menu__burger-item">Menu</span>	
+						</button>
+					</div>
+				</div>	
+			</div>
+		</header>
+		
+		<div class="intro" id="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<h1 class="intro__title">National Breed Club <br> & Rescue</h1>
+					<h2 class="intro__subtitle">The Dog Breeding Company "Pug life" s the recognized and trusted expert in breed, health, and training information for all dogs.</h2>
+					<a class="button button--min" href="pageout.html">Find Out More</a>
+				</div>
+			</div>
+		</div>
+		<!--features
+			========================-->	
+		<div class="container">
+			<div class="features">
+				<div class="features__item">
+					<img class="features__icon" src="img/icon01.png" alt="">
+					<h4 class="features__title">Health Guarantees</h4>
+					<div class="features__text">Breeders will provide a written health guarantee for their puppies because they are confident in the genetics behind their puppies. There’s no reason for them to hind anything.</div>
+				</div>
+
+				<div class="features__item">
+					<img class="features__icon" src="img/icon02.png" alt="">
+					<h4 class="features__title">Health Clearances</h4>
+					<div class="features__text">While breeders might not complete some health clearances on very young puppies, reputable breeders will have complete health clearance information for both parent dogs.</div>
+				</div>
+
+				<div class="features__item">
+					<img class="features__icon" src="img/icon03.png" alt="">
+					<h4 class="features__title">No Sale Sight Unseen</h4>
+					<div class="features__text">No reputable breeder would have sold their puppies sight unseen. Because they care for their dogs, it’s important for a breeder to see buyers before selling dogs to them and for you to see a puppy before buying one.</div>
+				</div>
+
+				<div class="features__item">
+					<img class="features__icon" src="img/icon04.png" alt="">
+					<h4 class="features__title">Vaccinations</h4>
+					<div class="features__text">Any responsible breeder will make sure that their puppies are up to date on their vaccinations before sending them home to you.The breeders will provide you a proof for this, and the vaccinations must follow the Official Standarts</div>
+				</div>
+
+				<div class="features__item">
+					<img class="features__icon" src="img/icon05.png" alt="">
+					<h4 class="features__title">Age Appropriate Sale</h4>
+					<div class="features__text">The first 8 to 12 weeks of a puppy’s life are crucial to their health and socialization, and the mother dog plays an essential role in this. For this reason, reputable dog breeders will not separate puppies from their mothers until a minimum of 8 weeks old.</div>
+				</div>
+
+				<div class="features__item">
+					<img class="features__icon" src="img/icon06.png" alt="">
+					<h4 class="features__title">Willingness to Answer Questions</h4>
+					<div class="features__text">Any responsible breeder will be willing to answer any questions you might have about their breeding program, dogs, and distinctions.They often encourage questions and will have plenty of their own.</div>
+				</div>
+
+			</div> <!-- /.features -->
+		</div> <!-- /.container -->
+		
+		<!-- .photos -->
+
+		<div class="photos">
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo01.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Lori, Loki, Liam</div>
+					<div class="photos__text">About them</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo02.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Samantha</div>
+					<div class="photos__text">About her</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo03.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Nick</div>
+					<div class="photos__text">About him</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo04.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Luna</div>
+					<div class="photos__text">About her</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo05.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Samuel</div>
+					<div class="photos__text">About him</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo06.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Tommy, Tyra, Tiffany</div>
+					<div class="photos__text">About them</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo07.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Cassie, Corrie</div>
+					<div class="photos__text">About them</div>	
+				</div>				
+			</div>
+
+			<div class="photos__item">
+				<img class="photos__img" src="img/photos/photo08.jpg" alt="">
+				<div class="photos__content">
+					<div class="photos__title">Sofia, Brett</div>
+					<div class="photos__text">About them</div>	
+				</div>				
+			</div>
+
+		</div> <!-- /.photos -->
+
+		<!-- .team -->
+		<div class="team">
+			<div class="container">
+				<div class="team__inner">
+					<div class="team__item">
+						<img class="team__face" src="img/faces/face01.jpg" alt="">
+						<div class="team__name">Eleanor Green</div>
+						<div class="team__prof">Dog breeder</div>
+						<div class="team__text">
+							<p>"I started in the Pug breed as a pet owner. I found my first pug in a pet store more than fifteen years ago.</p> 
+							<p>As the years went by, my family added additional pugs to our household. The temperament alone had sold us on this breed; they were ideal family pets."</p> 
+						</div>
+						<div class="social">
+							<a class="social__item" href="https://www.facebook.com" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook" class="social__facebook"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#instagram" class="social__instagram social__instagram--soc"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.whatsapp.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#whatsapp" class="social__whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+					</div> <!-- /.team__item -->
+				
+					<div class="team__item">
+						<img class="team__face" src="img/faces/face02.jpg" alt="">
+						<div class="team__name">Agnes Smith</div>
+						<div class="team__prof">Dog breeder</div>
+						<div class="team__text">
+							<p>"A good feature of these dogs: they do not leave their owners for a minute. This is very suitable for dog owners who need a close companion for life</p> 
+							<p>But pugs should definitely receive the same sincere feedback."</p> 
+						</div>
+						<div class="social">
+							<a class="social__item" href="https://www.facebook.com" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook" class="social__facebook"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#instagram" class="social__instagram social__instagram--soc"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.whatsapp.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#whatsapp" class="social__whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+					</div> <!-- /.team__item -->
+
+					<div class="team__item">
+						<img class="team__face" src="img/faces/face03.jpg" alt="">
+						<div class="team__name">Cory Denver</div>
+						<div class="team__prof">Dog breeder</div>
+						<div class="team__text">
+							<p>"Make sure a pug puppy is right for you.Like all breeds, pugs are prone to certain health problems.All pugs, regardless of breeding, are prone to eye problems.</p> 
+							<p>Pug's eyes are at risk of drying out or forming ulcers. For this reason you may have to deal with frequent vet visits to deal with eye issues."</p> 
+						</div>
+						<div class="social">
+							<a class="social__item" href="https://www.facebook.com" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook" class="social__facebook" ></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#instagram" class="social__instagram social__instagram--soc"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.whatsapp.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#whatsapp" class="social__whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+					</div> <!-- /.team__item -->
+
+					<div class="team__item">
+						<img class="team__face" src="img/faces/face04.jpg" alt="">
+						<div class="team__name">April Gill</div>
+						<div class="team__prof">Dog breeder</div>
+						<div class="team__text">
+							<p>"Though they typically have a calm temperament, Pugs do have a playful attitude when the mood strikes them.</p> 
+							<p>This is great for a family that has children because the relaxed temperament of the Pug means you’ll never be worried about behavioral mishaps. These pups do not bite people without reason."</p> 
+						</div>
+						<div class="social">
+							<a class="social__item" href="https://www.facebook.com" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook" class="social__facebook"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#instagram" class="social__instagram social__instagram--soc"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.whatsapp.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#whatsapp" class="social__whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+					</div> <!-- /.team__item -->	
+				</div> <!-- /.team__inner -->
+			</div> <!-- /.container -->
+		</div> <!-- /.team -->
+
+
+		<!-- reviews -->
+		<div class="reviews">
+			<div class="reviews__item">
+				<div class="reviews__slider">
+					<div class="reviews__photo">
+						<img src="img/reviews/reviews_1.jpg" class="reviews__image" height="520px" alt="">
+						<img src="img/reviews/reviews_2.jpg" class="reviews__image" height="520px" alt="">
+						<img src="img/reviews/reviews_3.jpg" class="reviews__image" height="520px" alt="">
+					</div>
+
+					<div class="reviews__buttons_min">
+						<div class="reviews__buttonsItem_min">
+							<button class="reviews__button_min reviews__button_min-Prev"><img src="img/icons/pawBackwhite.png" width="130px" alt=""></button>
+							<button class="reviews__button_min reviews__button_min-Next" ><img src="img/icons/pawForwwhite.png" width="130px"></button>
+						</div>
+					</div>					
+				</div>
+
+				<div class="reviews__body">
+					<div class="reviews__text">"We receive a large number of warm reviews from dog owners every day. Pugs are becoming a significant part of their hearts, and for us this is a clear sign of what we are doing is a mission to multiply good in our world."
+					</div>
+					<div class="reviews__author">April Gill, dog breeder</div>
+				</div>				
+			</div>	
+		
+			<div class="reviews__buttons">
+				<div class="reviews__buttonsItem">
+					<button class="reviews__button reviews__buttonPrev"><img src="img/icons/pawBack.png" width="130px" alt=""></button>
+					<button class="reviews__button reviews__buttonNext"><img src="img/icons/pawForw.png" width="130px"></button>
+				</div>
+			</div>
+		</div>
+			
+	 <!-- /reviews -->
+		<!-- virtual tour -->
+		<div class="virtual">
+			<div class="container">
+				<h3 class="virtual__title">Are You Ready For Virtual Tour Of Our Club?</h3>
+				<div class="virtual__text">
+					<p>Occasionally we organize live streaming</p>
+				</div>
+				<a href="pageout.html"class="button button--short button--min">Go!</a>
+			</div>		
+		</div> <!-- /virtual tour -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__column">
+						<h4 class="footer__title">Location</h4>
+						<address class="footer__address">
+							<div>4740 63 Hay Point Road</div> 
+							<div>Erakala, Queensland,</div> 
+							<div>Australia</div>
+						</address>
+					</div> <!-- /footer__column -->
+
+					<div class="footer__column">
+						<h4 class="footer__title">Share With Love</h4>
+						<div class="social social--footer">
+							<a class="social__item" href="https://www.facebook.com" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#instagram" class="social__instagram"></use>
+								</svg>
+							</a>
+
+							<a class="social__item" href="https://www.whatsapp.com/" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#whatsapp"></use>
+								</svg>
+							</a>
+						</div>					
+					</div> <!-- /footer__column -->
+
+					<div class="footer__column">
+						<h4 class="footer__title">About Us</h4>
+						<div class="footer__text">
+							<p>Founded in 2001. The Dog Breeding Company "Pug Life" is the recognized and trusted expert in breed, health, and training information for all pugs</p>
+						</div>
+					</div> <!-- /footer__column -->
+
+				</div> <!-- /footer__inner -->
+			</div> <!-- /container -->
+
+			<!-- copyright -->
+
+			<div class="copyright"> 
+				<div class="container">
+					<div class="copyright__text">Copyright© Pug life. All Rights Reserved.</div>
+				</div>
+			</div>
+			
+		</footer>
+		<script src="js/app.js"></script>
+	</body>
+</html>
+
