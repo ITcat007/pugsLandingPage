@@ -506,6 +506,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 .reviews__button{
 	display: inline-block;
 	background: none;
+	outline: none;
 }
 
 .reviews__button img{
@@ -847,6 +848,7 @@ body._touch .menu__sub-list{
 		background: none;
 		margin: 0 10px 0 10px;
 		width: 31%;
+		outline: none;
 	}
 
 	.reviews__button_min img{
